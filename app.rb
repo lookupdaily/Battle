@@ -1,7 +1,11 @@
-require 'sinatra'
+require 'sinatra/base'
 
-set :session_secret, 'Secret'
+class Battle < Sinatra::Base
 
-get '/Battle' do
+  set :session_secret, 'Secret'
+
+  get '/Battle' do
+    'Hello Battle'
+  end
 
 end
