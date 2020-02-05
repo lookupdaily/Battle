@@ -1,6 +1,6 @@
 feature 'getting players HP' do
     scenario 'displays brown sauce' do
-        visit '/play'
-        expect(page).to have_content('Player 1: 100HP / Player 2: 12HP')
+        sign_in_and_play
+        expect(page).to have_content('Player Jason: 100HP / Player Liz: 12HP')
     end
 end
