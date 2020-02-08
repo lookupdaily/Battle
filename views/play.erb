@@ -1,5 +1,5 @@
 <p>Player 1: <%= @player_1 %> vs Player 2: <%= @player_2 %></p>
-<p>Player <%= @player_1 %>: 100HP / Player <%= @player_2 %>: 12HP</p>
+<p>Player <%= @player_1 %>: <%= $player_1.health %>HP / Player <%= @player_2 %>: <%= $player_2.health %>HP</p>
 <form action="/attacked" method="post">
     <input type="submit" id="player_1_attack" name="Attack" value="ATTACK"></input>
 </form>
